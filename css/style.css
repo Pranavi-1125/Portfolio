@@ -91,7 +91,36 @@ table {
 .achievement-item p {
     font-size: 17px;
 }
+/* =========================================================
+   ABOUT ME - TYPOGRAPHY
+   ========================================================= */
 
+#about .section-heading p {
+    font-size: 18px;
+}
+
+#about .section-heading h2 {
+    font-size: 42px;
+}
+
+#about .lead {
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+#about > .container > .row:first-of-type p:not(.lead) {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
+#about .card h3 {
+    font-size: 22px;
+}
+
+#about .card p {
+    font-size: 17px;
+    line-height: 1.7;
+}
 /* =========================================================
    2. NAVBAR
    ========================================================= */
@@ -568,8 +597,36 @@ footer a:hover {
     .profile-label {
         font-size: 14px;
     }
-}
 
+
+    /* ================= ABOUT ME ================= */
+
+    #about .section-heading p {
+        font-size: 16px;
+    }
+
+    #about .section-heading h2 {
+        font-size: 34px;
+    }
+
+    #about .lead {
+        font-size: 19px;
+        line-height: 1.7;
+    }
+
+    #about > .container > .row:first-of-type p:not(.lead) {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    #about .card h3 {
+        font-size: 20px;
+    }
+
+    #about .card p {
+        font-size: 16px;
+    }
+}
 @media (max-width: 480px) {
 
     .hero-title {
