@@ -16,10 +16,11 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
     background-color: #fff9f2;
     color: #212529;
     transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 section {
@@ -34,6 +35,62 @@ p {
     line-height: 1.7;
 }
 
+/* =========================================================
+   GLOBAL TYPOGRAPHY
+   ========================================================= */
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.section-heading {
+    font-size: 42px;
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card h4 {
+    font-size: 20px;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+.btn {
+    font-size: 17px;
+}
+
+.form-label {
+    font-size: 17px;
+}
+
+.form-control {
+    font-size: 17px;
+}
+
+table {
+    font-size: 17px;
+}
+
+.skill-badge {
+    font-size: 16px;
+}
+
+.project-tech span {
+    font-size: 15px;
+}
+
+.achievement-item h4 {
+    font-size: 20px;
+}
+
+.achievement-item p {
+    font-size: 17px;
+}
 
 /* =========================================================
    2. NAVBAR
@@ -42,16 +99,19 @@ p {
 .navbar {
     min-height: 70px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
     letter-spacing: 0.5px;
 }
 
 .nav-link {
     margin-left: 8px;
     transition: color 0.3s ease;
+    font-size: 17px;
 }
 
 .nav-link:hover,
@@ -59,134 +119,118 @@ p {
     color: #ffc107 !important;
 }
 
-
-/* =========================================================
-   3. HERO / HOME SECTION
-   ========================================================= */
+/* =========================
+   HERO / HOME SECTION
+   ========================= */
 
 .hero-section {
     min-height: 100vh;
-    padding-top: 70px;
     display: flex;
     align-items: center;
-    background:
-        radial-gradient(
-            circle at top right,
-            rgba(128, 0, 32, 0.10),
-            transparent 35%
-        ),
-        #fff9f2;
+    padding: 120px 0 70px;
+    
 }
 
-.hero-section h1 {
+.hero-label {
     color: #800020;
-    letter-spacing: -1px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
 
-.hero-section h2 {
-    color: #343a40;
+.hero-title {
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #222;
 }
 
-.hero-section .lead {
+.hero-description {
     max-width: 650px;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #555;
 }
 
-.hero-section .btn {
-    min-width: 160px;
+.hero-tech {
+    font-size: 17px;
+    font-weight: 600;
+    color: #800020;
+    margin-bottom: 30px;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 45px;
+}
 
-/* Profile image */
+.hero-buttons .btn {
+    font-size: 17px;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
 
-.profile-image-container {
-    display: inline-block;
-    position: relative;
+/* Quick facts */
+
+.hero-stats {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-stat {
+    min-width: 135px;
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 1px solid #eadfda;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-stat h3 {
+    color: #800020;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.hero-stat p {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+}
+
+/* Profile */
+
+.hero-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-image {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    border: 8px solid white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-
-/* =========================================================
-   4. SECTION HEADINGS
-   ========================================================= */
-
-.section-heading p {
-    color: #800020;
+.profile-label {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
     letter-spacing: 2px;
-    font-size: 0.85rem;
-}
-
-.section-heading h2 {
-    position: relative;
-    display: inline-block;
-}
-
-.section-heading h2::after {
-    content: "";
-    display: block;
-    width: 55px;
-    height: 4px;
-    margin: 12px auto 0;
-    background-color: #800020;
-    border-radius: 5px;
-}
-
-
-/* =========================================================
-   5. ABOUT SECTION
-   ========================================================= */
-
-#about {
-    background-color: #fff9f2;
-}
-
-#about .card {
-    border: none;
-    border-radius: 15px;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-#about .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12) !important;
-}
-
-#about .card i {
     color: #800020;
 }
-
-
-/* =========================================================
-   6. EDUCATION
-   ========================================================= */
-
-#education {
-    background-color: #f5f5f5 !important;
-}
-
-#education .table {
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#education th,
-#education td {
-    padding: 15px;
-}
-
-#education tbody tr {
-    transition: background-color 0.2s ease;
-}
-
 
 /* =========================================================
    7. SKILLS
@@ -234,10 +278,9 @@ p {
     border-radius: 20px;
     background-color: #f1e4e8;
     color: #800020;
-    font-size: 0.85rem;
+    font-size: 16px;
     font-weight: 600;
 }
-
 
 /* =========================================================
    8. PROJECTS
@@ -288,11 +331,11 @@ p {
 }
 
 .project-tech span {
-    padding: 5px 10px;
+    padding: 6px 11px;
     border-radius: 15px;
     background-color: #f1e4e8;
     color: #800020;
-    font-size: 0.75rem;
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -439,95 +482,108 @@ footer a:hover {
 
 
 /* Tablets */
-
 @media (max-width: 991px) {
 
-    .navbar-nav {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .nav-link {
-        margin-left: 0;
-    }
-
     .hero-section {
-        text-align: center;
+        padding-top: 110px;
     }
 
-    .hero-section .lead {
-        margin-left: auto;
-        margin-right: auto;
+    .hero-title {
+        font-size: 52px;
     }
 
+    .hero-description {
+        font-size: 19px;
+    }
+
+    .hero-profile {
+        margin-top: 20px;
+    }
+
+    .profile-image {
+        max-width: 330px;
+    }
 }
-
-
-/* Mobile */
 
 @media (max-width: 767px) {
 
     .hero-section {
-        padding-top: 90px;
-        padding-bottom: 50px;
+        min-height: auto;
+        padding: 110px 0 60px;
     }
 
-    .hero-section h1 {
-        font-size: 3rem;
+    .hero-label {
+        font-size: 15px;
+        letter-spacing: 1.5px;
     }
 
-    .hero-section h2 {
-        font-size: 1.4rem;
+    .hero-title {
+        font-size: 42px;
+        line-height: 1.1;
     }
 
-    .profile-image {
-        width: 220px;
-        height: 220px;
+    .hero-description {
+        font-size: 17px;
     }
 
-    .section-heading h2 {
-        font-size: 2rem;
+    .hero-tech {
+        font-size: 16px;
     }
 
-    .skill-card,
-    .project-card {
-        margin-bottom: 10px;
+    .hero-buttons {
+        margin-bottom: 30px;
     }
 
-    #education th,
-    #education td {
-        padding: 10px;
-        font-size: 0.9rem;
-    }
-
-}
-
-
-/* Small mobile screens */
-
-@media (max-width: 480px) {
-
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .hero-section .btn {
+    .hero-buttons .btn {
+        font-size: 16px;
         width: 100%;
     }
 
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-stat {
+        flex: 1;
+        min-width: 100px;
+        padding: 15px 10px;
+    }
+
+    .hero-stat h3 {
+        font-size: 21px;
+    }
+
+    .hero-stat p {
+        font-size: 13px;
+    }
+
+    .hero-profile {
+        margin-top: 35px;
+    }
+
     .profile-image {
-        width: 190px;
-        height: 190px;
+        max-width: 280px;
     }
 
-    .skill-card .card-body,
-    #achievements .card-body,
-    #contact .card-body {
-        padding: 20px !important;
+    .profile-label {
+        font-size: 14px;
     }
-
 }
 
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-stats {
+        gap: 8px;
+    }
+
+    .hero-stat {
+        min-width: 0;
+    }
+}
 
 /* =========================================================
    15. DARK THEME
